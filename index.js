@@ -24,6 +24,28 @@ if (hacker1 > hacker2) {
 
 // Iteration 3: Loops
 
-// for (let char in hacker1) {
-//   console.log(` ${hacker1[char]}`);
-// }
+//3.1
+
+let capitalLetters = '';
+
+for (i = 0; i < hacker1.length; i++) {
+  capitalLetters += hacker1[i] + ' ';
+}
+
+console.log(capitalLetters.toUpperCase());
+
+// option 2
+
+for (var char in hacker2) {
+  capitalLetters += hacker2[char] + ' ';
+}
+
+console.log(capitalLetters.toUpperCase());
+
+//3.2
+let reversedName = '';
+
+for (let i = hacker1.length - 1; i >= 0; i--) {
+  reversedName += hacker1[i];
+}
+console.log(reversedName);
